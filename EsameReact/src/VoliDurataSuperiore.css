@@ -1,0 +1,73 @@
+/* Contenitore principale */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Titolo principale */
+  .title {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Bottone per caricare i dati */
+  .load-button {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .load-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .load-button:hover:enabled {
+    background-color: #462f86;
+  }
+  
+  /* Tabella voli */
+  .voli-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  .voli-table th,
+  .voli-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .voli-table th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .voli-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Messaggio di assenza dati */
+  .no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+  }
+  

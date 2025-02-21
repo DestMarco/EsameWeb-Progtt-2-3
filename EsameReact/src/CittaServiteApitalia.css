@@ -1,0 +1,55 @@
+/* Stili principali */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .load-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .load-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Stili per la lista delle città */
+  .city-list {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .list-title {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .city-item {
+    font-size: 16px;
+    color: #555;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .no-data {
+    font-size: 16px;
+    color: #999;
+    margin-top: 20px;
+  }
+  

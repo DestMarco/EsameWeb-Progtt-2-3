@@ -1,0 +1,48 @@
+{
+    "Aeroporto": [
+      {"codice": "JFK", "nome": "JFK Airport"},
+      {"codice": "FCO", "nome": "Aeroporto di Roma Fiumicino"},
+      {"codice": "CIA", "nome": "Aeroporto di Roma Ciampino"},
+      {"codice": "CDG", "nome": "Charles de Gaulle, Aeroport de Paris"},
+      {"codice": "HTR", "nome": "Heathrow Airport, London"}
+    ],
+    "ArrPart": [
+      {"codice": "132", "comp": "MagicFly", "arrivo": "FCO", "partenza": "JFK"},
+      {"codice": "263", "comp": "Caimanair", "arrivo": "FCO", "partenza": "CIA"},
+      {"codice": "534", "comp": "Apitalia", "arrivo": "JFK", "partenza": "CIA"},
+      {"codice": "1265", "comp": "Apitalia", "arrivo": "CIA", "partenza": "FCO"},
+      {"codice": "24", "comp": "Apitalia", "arrivo": "FCO", "partenza": "JFK"},
+      {"codice": "133", "comp": "MagicFly", "arrivo": "CDG", "partenza": "HTR"},
+      {"codice": "264", "comp": "Caimanair", "arrivo": "HTR", "partenza": "CDG"},
+      {"codice": "535", "comp": "Apitalia", "arrivo": "FCO", "partenza": "HTR"},
+      {"codice": "134", "comp": "MagicFly", "arrivo": "JFK", "partenza": "FCO"},
+      {"codice": "265", "comp": "Caimanair", "arrivo": "JFK", "partenza": "FCO"},
+      {"codice": "536", "comp": "Apitalia", "arrivo": "JFK", "partenza": "FCO"}
+    ],
+    "Compagnia": [
+      {"nome": "Caimanair", "annofondaz": "1954"},
+      {"nome": "Apitalia", "annofondaz": "1900"},
+      {"nome": "MagicFly", "annofondaz": "1990"}
+    ],
+    "LuogoAeroporto": [
+      {"aeroporto": "JFK", "citta": "New York", "nazione": "USA"},
+      {"aeroporto": "FCO", "citta": "Roma", "nazione": "Italy"},
+      {"aeroporto": "CIA", "citta": "Roma", "nazione": "Italy"},
+      {"aeroporto": "CDG", "citta": "Paris", "nazione": "France"},
+      {"aeroporto": "HTR", "citta": "London", "nazione": "United Kingdom"}
+    ],
+    "Volo": [
+      {"codice": "132", "comp": "MagicFly", "durataMinuti": "600"},
+      {"codice": "263", "comp": "Caimanair", "durataMinuti": "382"},
+      {"codice": "534", "comp": "Apitalia", "durataMinuti": "432"},
+      {"codice": "1265", "comp": "Apitalia", "durataMinuti": "382"},
+      {"codice": "24", "comp": "Apitalia", "durataMinuti": "599"},
+      {"codice": "133", "comp": "MagicFly", "durataMinuti": "60"},
+      {"codice": "264", "comp": "Caimanair", "durataMinuti": "60"},
+      {"codice": "535", "comp": "Apitalia", "durataMinuti": "150"},
+      {"codice": "134", "comp": "MagicFly", "durataMinuti": "600"},
+      {"codice": "265", "comp": "Caimanair", "durataMinuti": "601"},
+      {"codice": "536", "comp": "Apitalia", "durataMinuti": "599"}
+    ]
+  }
+  

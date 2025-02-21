@@ -1,0 +1,71 @@
+/* Container principale */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titolo principale */
+  .title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Bottone di caricamento */
+  .load-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .load-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .load-button:hover:enabled {
+    background-color: #0056b3;
+  }
+  
+  /* Tabella degli aeroporti */
+  .aeroporti-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+  }
+  
+  .aeroporti-table th,
+  .aeroporti-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .aeroporti-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .aeroporti-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Testo se non ci sono dati */
+  .no-data {
+    font-size: 16px;
+    color: #999;
+    margin-top: 20px;
+  }
+  
