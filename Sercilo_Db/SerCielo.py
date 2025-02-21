@@ -10,7 +10,7 @@ CORS(app)
 
 def load_fake_db():
     try:
-        json_file_path = '/home/user/EsameWeb-Progtt-2-3/Sercilo+Db/db.json'
+        json_file_path = '/home/user/EsameWeb-Progtt-2-3/Sercilo_Db/db.json'
         with open(json_file_path, 'r', encoding='utf-8') as file:
             db_data = json.load(file)
             if isinstance(db_data, dict):
@@ -46,9 +46,10 @@ def run_query(query_id):
                 if luogo["aeroporto"] in aeroporti_apitalia:
                     citta_count[luogo["citta"]] = citta_count.get(luogo["citta"], 0) + 1
             risultati = [citta for citta, count in citta_count.items() if count > 1]
+             #risultati = [("Roma", "Italia")]
             return jsonify(risultati)
         elif query_id == 4:
-            risultati = [volo for volo in data["Volo"] if int(volo.get("durataMinuti", 0)) > 500]
+            risultati = [volo for volo in data["Volo"] if int(volo.get("durataMinuti", 0)) > 600]
             return jsonify(risultati)
         elif query_id == 5:
             risultati = sorted(

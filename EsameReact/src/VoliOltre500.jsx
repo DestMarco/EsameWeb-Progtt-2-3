@@ -2,7 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import "./VoliDurataSuperiore.css"; // Importa il file CSS
 
-const VoliDurataSuperiore = () => {
+
+const VoliOltre500 = () => {
   const [voli, setVoli] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -10,15 +11,15 @@ const VoliDurataSuperiore = () => {
     setLoading(true);
 
     axios
-      .get("http://127.0.0.1:5004/query/2")
+      .get("http://127.0.0.1:5004/query/4")
       .then((response) => setVoli(response.data))
       .catch((error) => console.error("Errore nel recupero dei voli", error))
       .finally(() => setLoading(false));
   };
-  
+
   return (
     <div className="container">
-      <h1 className="title">Voli con Durata Superiore alla Media della Compagnia</h1>
+      <h1 className="title">Voli sopra ai 600 minuti di Durata</h1>
 
       {/* Bottone per caricare i dati */}
       <button onClick={fetchVoli} className="load-button" disabled={loading}>
@@ -52,5 +53,4 @@ const VoliDurataSuperiore = () => {
     </div>
   );
 };
-
-export default VoliDurataSuperiore;
+export default VoliOltre500;

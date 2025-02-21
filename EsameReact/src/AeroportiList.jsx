@@ -7,7 +7,7 @@ const AeroportiList = () => {
   // Effettua la richiesta per ottenere gli aeroporti al caricamento della pagina
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:5002/query/1")  // Richiesta GET per ottenere tutti gli aeroporti
+      .get("http://127.0.0.1:5004/query/1")  // Richiesta GET per ottenere tutti gli aeroporti
       .then((response) => setAeroporti(response.data))
       .catch((error) => console.error("Errore nel recupero degli aeroporti", error));
   }, []);  // Esegui una sola volta al caricamento del componente

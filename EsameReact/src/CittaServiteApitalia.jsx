@@ -10,7 +10,7 @@ const CittaServiteApitalia = () => {
     setLoading(true);
 
     axios
-      .get("http://127.0.0.1:5002/query/3")
+      .get("http://127.0.0.1:5004/query/3")
       .then((response) => setCitta(response.data))
       .catch((error) => console.error("Errore nel recupero delle città", error))
       .finally(() => setLoading(false));
@@ -32,7 +32,7 @@ const CittaServiteApitalia = () => {
           <ul>
             {citta.map((city, index) => (
               <li key={index} className="city-item">
-                {city.citta}
+                {city}
               </li>
             ))}
           </ul>
